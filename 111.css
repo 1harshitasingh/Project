@@ -1,0 +1,546 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.logo-img {
+  height: 30px;
+}
+
+.top-right a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.quick-order {
+  background: #ff6f61;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-section a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+}
+
+.badge {
+  background: #ff6f61;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eee;
+}
+
+.categories a {
+  margin-right: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  flex: 2;
+  min-width: 300px;
+}
+
+.blue-banner {
+  background-color: #008bd1;
+  color: white;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  min-width: 200px;
+  margin-left: 20px;
+}
+
+.blue-banner h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.blue-banner p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.blue-banner button {
+  padding: 10px 20px;
+  background: white;
+  color: #008bd1;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Health Concerns */
+.health-concerns {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  align-items: center;
+  justify-content: center;
+}
+
+.health-concerns h1 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.concern-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.concern-card {
+  flex: 0 0 auto;
+  text-align: center;
+  width: clamp(80px, 20vw, 120px);
+}
+
+.concern-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.concern-card p {
+  margin-top: 0.5rem;
+  font-size: clamp(0.65rem, 2vw, 0.9rem);
+  color: #333;
+}
+
+/* Featured Brands */
+.featured-brands {
+  background-color: #f6f6f6;
+  padding: 20px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.see-all {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: flex-start;
+}
+
+.brand {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.brand:hover {
+  transform: scale(1.05);
+}
+
+.brand img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+/* Personal Care */
+.personal-care {
+  padding: 20px 40px;
+  background-color: #f6f6f6;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #1565c0;
+  display: inline-block;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.care-categories {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.care-card {
+  width: 130px;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.care-card img {
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.care-card:hover {
+  transform: scale(1.05);
+}
+
+/* Popular Categories */
+.Hero {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  color: #1a0dab;
+  margin-bottom: 10px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category-item2 {
+  text-align: center;
+  width: 18%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-item2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.category-item2 p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Product Section */
+.product-section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.product-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card .title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.product-card .desc {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.product-card .delivery {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #2e7d32;
+}
+
+.product-card .price {
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+.discount {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.final-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Trending Section */
+.trending-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 40px;
+  padding-bottom: 10px;
+}
+
+.card-container {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navbar,
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .blue-banner {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .concern-card {
+    width: 70px;
+  }
+
+  .category-item2 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-item2 {
+    width: 100%;
+  }
+}

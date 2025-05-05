@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #2e2e2e;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #fffbe5;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f1e18;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #0f1e18;
+    font-weight: 500;
+  }
+  
+  .nav-book-btn {
+    background-color: #0f1e18;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 40%, rgba(255, 255, 255, 0)),
+                url('img1.avif') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    color: white;
+  }
+  
+  
+  .hero-content {
+    max-width: 500px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .hero-book-btn {
+    background-color: #fffbe5;
+    color: #0f1e18;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
