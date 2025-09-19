@@ -13,9 +13,10 @@ body {
   padding: 20px;
 }
 
-.container {
+/* Containers */
+.container, .container2, .container3 {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -259,6 +260,48 @@ body {
   object-fit: contain;
 }
 
+/* Ayurveda Brands */
+.ayurveda-brands {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.ayurveda-brands h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.brand-container1 {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.brand-card1 {
+  width: 180px;
+  height: 100px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card1:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card1 img {
+  max-width: 100%;
+  max-height: 90px;
+  object-fit: contain;
+}
+
 /* Personal Care */
 .personal-care {
   padding: 20px 40px;
@@ -497,12 +540,42 @@ h2 {
   margin: 0;
 }
 
+/* About Section */
+.about-tata1mg {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
 
+.about-tata1mg h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
 
+.about-tata1mg h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 
+.about-tata1mg p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.about-tata1mg strong {
+  font-weight: 700;
+  color: #111;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .navbar,
-  .top-bar {
+  .navbar, .top-bar {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -511,6 +584,10 @@ h2 {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .search-bar input {
+    width: 100%;
   }
 
   .categories {
@@ -526,10 +603,6 @@ h2 {
     margin-top: 20px;
   }
 
-  .search-bar input {
-    width: 100%;
-  }
-
   .concern-card {
     width: 70px;
   }
@@ -537,10 +610,20 @@ h2 {
   .category-item2 {
     width: 45%;
   }
+
+  .brand-card1 {
+    width: 150px;
+    height: 90px;
+  }
 }
 
 @media (max-width: 480px) {
   .category-item2 {
     width: 100%;
+  }
+
+  .brand-card1 {
+    width: 120px;
+    height: 80px;
   }
 }
